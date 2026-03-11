@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLB Nhiếp Ảnh & Mỹ Thuật</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#111;
+color:white;
+scroll-behavior:smooth;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+}
+
+nav a:hover{
+color:orange;
+}
+
+.banner{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32") center/cover;
+}
+
+.section{
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1c1c1c;
+padding:20px;
+border-radius:10px;
+}
+
+.video-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+iframe{
+width:100%;
+height:200px;
+border:none;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
+}
+
+.gallery img{
+width:100%;
+border-radius:8px;
+}
+
+.quiz{
+background:#1c1c1c;
+padding:20px;
+border-radius:10px;
+}
+
+button{
+padding:10px 20px;
+border:none;
+background:orange;
+cursor:pointer;
+margin-top:10px;
+}
+
+#result{
+font-size:20px;
+margin-top:10px;
+}
+
+.top{
+position:fixed;
+bottom:20px;
+right:20px;
+background:orange;
+border:none;
+padding:10px;
+border-radius:50%;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h3>CLB Nhiếp Ảnh & Mỹ Thuật</h3>
+
+<nav>
+<a href="#home">Trang chủ</a>
+<a href="#photo">Học chụp ảnh</a>
+<a href="#draw">Học vẽ</a>
+<a href="#video">Video</a>
+<a href="#quiz">Kiểm tra</a>
+</nav>
+</header>
+
+<section class="banner" id="home">
+<h1>CLB Nhiếp Ảnh & Mỹ Thuật</h1>
+<p>PTDTNT THPT Tỉnh Điện Biên</p>
+</section>
+
+<section class="section" id="photo">
+
+<h2>Học Chụp Ảnh</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Bố cục 1/3</h3>
+<p>Chia khung hình thành 9 phần bằng 2 đường ngang và 2 đường dọc. 
+Đặt chủ thể tại các giao điểm để ảnh cân đối và đẹp hơn.</p>
+</div>
+
+<div class="card">
+<h3>Ánh sáng</h3>
+<p>Ánh sáng tự nhiên là tốt nhất. 
+Chụp vào buổi sáng hoặc chiều để ánh sáng mềm và đẹp.</p>
+</div>
+
+<div class="card">
+<h3>Chụp chân dung</h3>
+<p>Lấy nét vào mắt của người mẫu và làm mờ hậu cảnh để nổi bật chủ thể.</p>
+</div>
+
+<div class="card">
+<h3>Chụp phong cảnh</h3>
+<p>Chọn góc rộng và thêm tiền cảnh để tạo chiều sâu cho ảnh.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="draw">
+
+<h2>Học Vẽ</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Luyện nét</h3>
+<p>Vẽ nhiều đường thẳng và cong để luyện sự kiểm soát bút.</p>
+</div>
+
+<div class="card">
+<h3>Dựng hình</h3>
+<p>Bắt đầu bằng các hình khối cơ bản như tròn, vuông, tam giác.</p>
+</div>
+
+<div class="card">
+<h3>Đổ bóng</h3>
+<p>Dùng nhiều mức độ đậm nhạt để tạo chiều sâu cho tranh.</p>
+</div>
+
+<div class="card">
+<h3>Phối màu</h3>
+<p>Kết hợp màu nóng và màu lạnh để tranh nổi bật hơn.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="video">
+
+<h2>Video Hướng Dẫn</h2>
+
+<div class="video-grid">
+
+<iframe src="https://www.youtube.com/embed/7ZVyNjKSr0M"></iframe>
+
+<iframe src="https://www.youtube.com/embed/kSQyQkJ0KJY"></iframe>
+
+<iframe src="https://www.youtube.com/embed/G3e-cpL7ofc"></iframe>
+
+<iframe src="https://www.youtube.com/embed/k0ufz75UvHs"></iframe>
+
+</div>
+
+</section>
+
+<section class="section" id="quiz">
+
+<h2>Kiểm Tra Kiến Thức</h2>
+
+<div class="quiz">
+
+<p>1. Quy tắc nào giúp bố cục ảnh đẹp hơn?</p>
+
+<label>
+<input type="radio" name="q1" value="0"> Quy tắc màu
+</label><br>
+
+<label>
+<input type="radio" name="q1" value="1"> Quy tắc 1/3
+</label><br>
+
+<label>
+<input type="radio" name="q1" value="0"> Quy tắc ánh sáng
+</label>
+
+<br><br>
+
+<p>2. Khi vẽ để tạo chiều sâu ta dùng gì?</p>
+
+<label>
+<input type="radio" name="q2" value="1"> Đổ bóng
+</label><br>
+
+<label>
+<input type="radio" name="q2" value="0"> Tô màu ngẫu nhiên
+</label><br>
+
+<label>
+<input type="radio" name="q2" value="0"> Chỉ vẽ nét
+</label>
+
+<br>
+
+<button onclick="checkQuiz()">Nộp bài</button>
+
+<div id="result"></div>
+
+</div>
+
+</section>
+
+<button class="top" onclick="topFunction()">↑</button>
+
+<script>
+
+function checkQuiz(){
+
+let score=0;
+
+let q1=document.querySelector('input[name="q1"]:checked');
+let q2=document.querySelector('input[name="q2"]:checked');
+
+if(q1) score+=Number(q1.value);
+if(q2) score+=Number(q2.value);
+
+document.getElementById("result").innerHTML=
+"Điểm của bạn: "+score+"/2";
+
+}
+
+function topFunction(){
+window.scrollTo({top:0,behavior:'smooth'});
+}
+
+</script>
+
+</body>
+</html>
